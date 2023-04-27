@@ -2,7 +2,7 @@ import useMediaQuery from '@/hooks/useMediaQuery';
 import { SelectedPage } from '@/shared/types';
 import ActionButton from '@/shared/ActionButton';
 import HomePageText from "@/assets/HomePageText.png";
-import HomePageGraphic from "@/assets/HomePageGraphic.png";
+import HomePageGraphic from "@/assets/bum.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
 import SponsorForbes from "@/assets/SponsorForbes.png";
 import SponsorFortune from "@/assets/SponsorFortune.png";
@@ -41,12 +41,11 @@ function Home({ setSelectedPage }: Props) {
                     className='md:-mt-20'>
                         <div className='relative'>
                             <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
-                                <img src={HomePageText} alt="home-page-text" />
+                                <img src={HomePageText} alt="home-page-text" className='w-[489px] h-[163px]'/>
                             </div>
                         </div>
-                        <p className='mt-8 text-sm'>
-                            AUWHEAWH AUHE AHWEUHA UWEUAWHE AWUEUA WUEU AWUE AUWHEUAW UEUAWEUAW UEU AUWE UAWUE AUWE
-                            UAWEUHAWEHAEA AUWHEU AWUE AUWEUAWUEU AWUEAUW EUAWEUAWUEAWUEUAWEAUWEUAWAW UEAW A
+                        <p className='mt-8 text-md text-white'>
+                        Academias sem igual. Treinamentos e aulas fitness incomparáveis. Estúdios topo de linha para você alcançar a forma física que você sonha. Obtenha o corpo dos seus sonhos agora.
                         </p>
                     </motion.div>
 
@@ -66,11 +65,12 @@ function Home({ setSelectedPage }: Props) {
                         </ActionButton>
 
                         <AnchorLink
-                        className='text-sm font-bold text-primary-500 underline hover:text-secondary-500'
+                        className='text-sm font-bold text-primary-500 underline hover:text-black'
                         onClick={()=> setSelectedPage(SelectedPage.ContactUs)}
                         href={`#${SelectedPage.ContactUs}`}
                         >
                         <p>Learn More</p>
+                        
                         </AnchorLink>
                     </motion.div>
                 </div>
