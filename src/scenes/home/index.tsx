@@ -19,12 +19,12 @@ function Home({ setSelectedPage }: Props) {
 
     return (
         <section
-            id="home"
-            className='gap-16 bg-gray-20 py-10 md:h-full md:pb-0'
+            id="início"
+            className='gap-16 py-10 md:h-full md:pb-0'
         >
             {/* IMAGE AND MAIN HEADER */}
             <motion.div 
-            onViewportEnter={() => setSelectedPage(SelectedPage.Home)}
+            onViewportEnter={() => setSelectedPage(SelectedPage.Início)}
             className='md:flex mx-auto w-5/6 items-center justify-center md:h-5/6'>
                 {/* MAIN HEADER */}
                 <div className='z-10 mt-32 md:basis-3/5'>
@@ -61,15 +61,15 @@ function Home({ setSelectedPage }: Props) {
                     }}
                     className='mt-8 flex items-center gap-8'>
                         <ActionButton setSelectedPage={setSelectedPage}>
-                            Join Now
+                            Junte-se agora
                         </ActionButton>
 
                         <AnchorLink
-                        className='text-sm font-bold text-primary-500 underline hover:text-black'
-                        onClick={()=> setSelectedPage(SelectedPage.ContactUs)}
-                        href={`#${SelectedPage.ContactUs}`}
+                        className='text-sm font-bold text-primary-500 underline hover:text-white'
+                        onClick={()=> setSelectedPage(SelectedPage.Contato)}
+                        href={`#${SelectedPage.Contato}`}
                         >
-                        <p>Learn More</p>
+                        <p>Saiba mais</p>
                         
                         </AnchorLink>
                     </motion.div>
@@ -84,7 +84,7 @@ function Home({ setSelectedPage }: Props) {
             {/* SPONSORS */}
             {isAboveMediumScreens && (
                 <div className='h-[150px] w-full bg-primary-100 py-10'>
-                    <div className='mx-auto w-5/6'>
+                    <div className='mx-auto w-5/6 justify-center flex'>
                         <div className='flex w-3/5 items-center justify-between gap-8'>
                             <img src={SponsorRedBull} alt="redbull" />
                             <img src={SponsorForbes} alt="forbes" />

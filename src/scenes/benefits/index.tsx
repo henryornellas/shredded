@@ -4,23 +4,23 @@ import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
 import ActionButton from "@/shared/ActionButton";
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
+import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.webp";
 
 const benefits: Array<BenefitType> = [
     {
         icon: <HomeModernIcon className="h-6 w-6"/>,
-        title: "State of the Art Facilities",
-        description: "awuehawh auwheuha weua wueu aweuawue uaweu awu ehuaweuaweu auwe uaweuawuehauw euawe"
+        title: "Academias de Última Geração",
+        description: "Em nossos centros de treinamento ©shredded contamos com as melhores instalações e equipamentos de última geração."
     },
     {
         icon: <UserGroupIcon className="h-6 w-6"/>,
-        title: "100's of Diverse Classes",
-        description: "awuehawuehuaw auwheuhuawheuu uha weua wueu aweuawue uaweu awu ehuaweuaweu auwe uaweuawuehauw euawe"
+        title: "Aulas Variadas",
+        description: "Espere os mais diversos tipos de aulas para seus diferentes moods, como yoga, crossfit ou HIIT."
     },
     {
         icon: <AcademicCapIcon className="h-6 w-6"/>,
-        title: "Expert and Pro Trainers",
-        description: "awuehawh auwheuha weahweuahwu auwhe awue uawhe awheawuehauw euawe"
+        title: "Profissionais Experientes",
+        description: "Temos os profissionais mais capacitados e experientes da área para melhor te acompanhar durante seus treinos."
     }
 ]
 
@@ -37,9 +37,10 @@ type Props = {
 
 function Benefits({ setSelectedPage }: Props) {
     return (
-        <section id="benefits" className="mx-auto min-h-full w-5/6 py-20">
+        <section id="benefícios" className="mx-auto min-h-full w-5/6 py-20">
             <motion.div
-                onViewportEnter={() => setSelectedPage(SelectedPage.Benefits)}>
+                onViewportEnter={() => setSelectedPage(SelectedPage.Benefícios)}
+                className="text-white">
             
             {/* HEADER */}
             <motion.div
@@ -52,10 +53,10 @@ function Benefits({ setSelectedPage }: Props) {
                 visible: {opacity:1, x:0,}
             }}
             className="md:my-5 md:w-3/5">
-                <HText>MORE THAN JUST A GYM.</HText>
-                <p className="my-5 text-sm">
-                  AUWHEUAWUAU AUWEU AWUE UAW EAWUEUA WEAWU EUAWU EUAWE, AUHWEAWHEUAWUEUAEUAE UAWUE UAWEU AUWE 
-                  UAWHEAWEUAW EAWUEH UAWUE HAWUHE UAWHEU HAWUE HUAWHE UAWU EUAWUE HAWUE HUAWE AW AWUE A EA
+                <HText>MAIS QUE UMA ACADEMIA.</HText>
+                <p className="my-5 text-sm text-white">
+                Nossa rede de academias oferece instalações de última geração e profissionais competentes para garantir que você alcance seus objetivos fitness.
+                Com uma ampla variedade de modalidades de aulas, você pode experimentar novos desafios e encontrar a que melhor se adequa às suas necessidades.
                 </p>
             </motion.div>
 
@@ -84,7 +85,7 @@ function Benefits({ setSelectedPage }: Props) {
                 <div>
                     {/* TITLE */}
                     <div className="relative">
-                    <div className="beofre:absolute before:-top-20 before:-left-20 before:z-[1] beofre:content-abstractwaves">
+                    <div className="beofre:absolute before:-top-20 before:-left-20 before:z-[1] before:content-abstractwaves">
                     <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -95,7 +96,7 @@ function Benefits({ setSelectedPage }: Props) {
                         visible: {opacity:1, x:0,}
                     }}>
                         <HText>
-                            MILLIONS OF HAPPY MEMBER GETTING{" "}
+                            MILHARES DE MEMBROS SE TORNANDO {" "}
                             <span className="text-primary-500">FIT</span>
                         </HText>
                     </motion.div>
@@ -103,6 +104,7 @@ function Benefits({ setSelectedPage }: Props) {
                     </div>
                     {/* DESCRIPTION */}
                     <motion.div
+                    className="text-white"
                     initial="hidden"
                     whileInView="visible"
                     viewport={{once: true, amount: 0.5}}
@@ -112,17 +114,16 @@ function Benefits({ setSelectedPage }: Props) {
                         visible: {opacity:1, x:0,}
                     }}>
                         <p className="my-5">
-                            AUuawh uawheu hawuehu auweuaweuawu eawu euawueh awuheu hawue hawuhe uawheuhawue hawuhe u awheu hawue hawueh uaweh
+                        Na nossa rede de academias, já transformamos a vida de milhares de pessoas que alcançaram seus objetivos fitness com nossos planos de treino personalizados e aulas de qualidade.
+                        Se você está procurando uma comunidade comprometida em ajudá-lo a alcançar seus objetivos, aqui é o lugar certo.
                         </p>
-                        <p className="mb-5">
-                            AUuawh uawheu hawuehu auweuaweuawu eawu euawueh awuheu hawue hawuhe uawheuhawue hawuhe u awheu hawue hawueh uaweh
-                        </p>
+                        
                     </motion.div>
 
                     {/* BUTTON */}
 
                     <div className="relative mt-16">
-                        <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+                        <div className="text-black before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
                             <ActionButton setSelectedPage={setSelectedPage}>
                                 Join Now
                             </ActionButton>

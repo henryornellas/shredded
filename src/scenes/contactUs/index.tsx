@@ -10,7 +10,7 @@ type Props = {
 
 function ContactUs({ setSelectedPage }: Props) {
 
-    const inputStyles = `mb-5 w-full rounded-lg bg-primary-300 px-5 py-3 placeholder-white`
+    const inputStyles = `mb-5 w-full rounded-lg px-5 py-3 placeholder-black`
 
     const {
         register,
@@ -26,8 +26,8 @@ function ContactUs({ setSelectedPage }: Props) {
     }
 
     return (
-        <section id="contactus" className="mx-auto w-5/6 pt-24 pb-32">
-            <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.ContactUs)}>
+        <section id="contato" className="mx-auto w-5/6 pt-24 pb-32">
+            <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Contato)}>
                 {/* HEADER */}
                 <motion.div
                     initial="hidden"
@@ -40,11 +40,11 @@ function ContactUs({ setSelectedPage }: Props) {
                     }}
                     className="md:w-3/5">
                     <HText>
-                        <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+                        <span className="text-primary-500">JUNTE-SE AGORA</span>
                     </HText>
-                    <p className="my-5">
-                        iajeiajwie aweuauwe uaw ehauweh awuhe uawheuawhueh auwhe uahweu hawueh awuhe awheu hawue awuehaw
-                        uaw ehauweh awuhe uawheuawhueh auwhe uahweu hawueh awuhe awheu hawue awuehawuaw
+                    <p className="my-5 text-white">
+                    Compartilhe sua jornada fitness conosco! Envie-nos uma mensagem contando um pouco sobre seus objetivos
+                    e desafios, e nós enviaremos nossos melhores planos de treino e aulas que melhor se encaixam ao seus objetivos para ajudá-lo a conquistá-los.
                     </p>
                 </motion.div>
 
@@ -67,7 +67,7 @@ function ContactUs({ setSelectedPage }: Props) {
                             action="https://formsubmit.co/3518066c867a295fb3a06135962aad67"
                             method="POST">
 
-                            <input className={inputStyles} type="text" placeholder="NAME" {...register("name", { required: true, maxLength: 100 })} />
+                            <input className={inputStyles} type="text" placeholder="NOME" {...register("name", { required: true, maxLength: 100 })} />
                             {errors.name && (
                                 <p className="mt-1 text-primary-500">
                                     {errors.name.type === "required" && "This field is required."}
@@ -83,7 +83,7 @@ function ContactUs({ setSelectedPage }: Props) {
                                 </p>
                             )}
 
-                            <textarea rows={4} cols={50} className={inputStyles} placeholder="MESSAGE" {...register("message", { required: true, maxLength: 2000 })} />
+                            <textarea rows={4} cols={50} className={inputStyles} placeholder="MENSAGEM" {...register("message", { required: true, maxLength: 2000 })} />
                             {errors.message && (
                                 <p className="mt-1 text-primary-500">
                                     {errors.message.type === "required" && "This field is required."}
@@ -93,9 +93,9 @@ function ContactUs({ setSelectedPage }: Props) {
 
                             <button
                                 type="submit"
-                                className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 transition duration-500 hover:text-white"
+                                className="mt-5 rounded-lg bg-primary-100 px-20 py-3 transition duration-500 hover:bg-primary-500 hover:text-white"
                             >
-                                SUBMIT
+                                ENVIAR
                             </button>
 
                         </form>
@@ -113,7 +113,6 @@ function ContactUs({ setSelectedPage }: Props) {
 
                         <div className="md:before:content-evolvetext w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1]">
                             <img
-                            className="w-full"
                             src={ContactUsPageGraphic}
                             alt="contact-us-img" />
                         </div>

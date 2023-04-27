@@ -1,43 +1,43 @@
 import { SelectedPage, ClassType } from "@/shared/types"
-import image1 from "@/assets/image1.png";
-import image2 from "@/assets/image2.png";
-import image3 from "@/assets/image3.png";
-import image4 from "@/assets/image4.png";
-import image5 from "@/assets/image5.png";
-import image6 from "@/assets/image6.png";
+import image1 from "@/assets/image1.jpg";
+import image2 from "@/assets/image2.webp";
+import image3 from "@/assets/image3.jpg";
+import image4 from "@/assets/image4.jpeg";
+import image5 from "@/assets/image5.jpg";
+import image6 from "@/assets/image6.webp";
 import { motion } from "framer-motion";
 import HText from "@/shared/HText";
 import Class from "./Class"
 
 const classes: Array<ClassType> = [
   {
-    name: "Wheight Training Classes",
-    description: "haweaw aweua wueawawue aweaw auw",
+    name: "Treino de Hipertrofia",
+    description: "Treino resistido convencional para construção de massa muscular",
     image: image1,
   },
   {
-    name: "Abs Core Classes",
-    description: "haweaw aweua wueawawue aweaw auw",
+    name: "Crossfit",
+    description: "Modalidade para melhoria da resistencia e capacidade cardiovascular",
     image: image2,
   },
   {
-    name: "Adventure Classes",
-    description: "haweaw aweua wueawawue aweaw auw",
+    name: "Aulas em Grupo",
+    description: "Diferentes dinamicas divertidas fit em grupo",
     image: image3,
   },
   {
-    name: "Yoga Training Classes",
-    description: "haweaw aweua wueawawue aweaw auw",
+    name: "Aulas de HIIT",
+    description: "Treino de alta intensidade intervalado para melhor resistencia vascular",
     image: image4,
   },
   {
-    name: "Fitness Training Classes",
-    description: "haweaw aweua wueawawue aweaw auw",
+    name: "Yoga",
+    description: "Aulas com meditações para acalmar e focar em seus movimentos",
     image: image5,
   },
   {
-    name: "Training Classes",
-    description: "haweaw aweua wueawawue aweaw auw",
+    name: "Peso do Corpo",
+    description: "Foco em  variedade de exercícios livres como flexão, barra e agachamentos",
     image: image6,
   }
 ]
@@ -48,9 +48,9 @@ type Props = {
 
 function OurClasses({ setSelectedPage }: Props) {
   return (
-    <section id="ourclasses" className="w-full bg-primary-100 py-40">
+    <section id="aulas" className="w-full bg-white py-40">
       <motion.div
-        onViewportEnter={() => setSelectedPage(SelectedPage.OurClasses)}
+        onViewportEnter={() => setSelectedPage(SelectedPage.Aulas)}
       >
 
         <motion.div
@@ -64,11 +64,12 @@ function OurClasses({ setSelectedPage }: Props) {
           }}
           className="mx-auto w-5/6"
         >
-          <div className="md:w-3/5">
-            <HText>OUR CLASSES</HText>
+          <div className="md:w-3/5 text-black">
+            <HText>NOSSAS AULAS</HText>
             <p className="py-5">
-              awuheawheu awheaw uhehuawh euawuhe uawhue auwheuawhuehawuhe uahwuehuawh uhawuehawhe uawhe uhawuehauwe
-              auwehawue hawue uaweu awhue hawue huawhe uawhe uhawue hawuheuaw uehawhe uawheuawh euawue auwe aweawu e
+            Oferecemos diversas modalidades de aulas em nossos centros, desde treino de hipertrofia e CrossFit, para os que buscam um desafio mais intenso,
+            até Yoga e outras práticas de bem-estar, para aqueles que preferem uma abordagem mais tranquila.
+            Temos diferentes estilos para todos os tipos de praticantes, independentemente de seus objetivos e níveis de condicionamento físico.
             </p>
           </div>
 

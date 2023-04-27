@@ -1,4 +1,4 @@
-import Logo from "@/assets/Logo.png"
+import Logo from "@/assets/logopreta.png"
 
 type Props = {}
 
@@ -9,21 +9,20 @@ function Footer({ }: Props) {
                 <div className="mt-16 basis1/2 md:mt-0">
                     <img src={Logo} alt="logo" className="h-[24px] w-[113px]"/>
                     <p className="my-5">
-                        awueauweuawudhu awuh wuadhuawu dhawu dhu awueauweuawudhu awuh wuadhuawu dhawu dhu
-                        awuhe auwheuhawue uawhe uhawue hawuhe uawhueh uawhe uahwue hawu hewhae
+                       Entre em contato conosco por email para receber planos personalizados no seu email.
                     </p>
-                    <p>© Shredded All Rights Reserved.</p>
+                    <p>© SHREDDED Todos os direitos reservados.</p>
                 </div>
                 <div className="mt-16 basis-1/4 md:mt-0">
-                    <h4 className="font-bold">Links</h4>
-                    <p className="my-5">auwhe awueawhe auwh e</p>
-                    <p className="my-5">awawuea auw </p>
-                    <p>Uwuh awua wdua </p>
+                    <h4 className="font-bold mb-5">Links</h4>
+                    <p className="my-2.5"><a href='https://github.com/henryornellas' target="_blank" className="underline">Github</a></p>
+                    <p className="my-2.5"><a href='https://www.linkedin.com/in/henry-gabriel-a276301b6/' target="_blank" className="underline my-3">LinkedIn</a></p>
+                    <p className="my-2.5"><a href='https://github.com/henryornellas' target="_blank" className="underline">Portfolio</a></p>
                 </div>
                 <div className="mt-16 basis-1/4 md:mt-0">
-                    <h4 className="font-bold">Contact US</h4>
-                    <p className="my-5">auwhe awueawhe auwh e</p>
-                    <p className="my-5">aawahd awudha</p>
+                    <h4 className="font-bold">Contato</h4>
+                    <p className="my-5">Draco Dormiens Numquam Titillandus</p>
+                    <p className="my-5">Aut Viam Inveniam Aut Faciam</p>
                     <p>(12) 34567-8910</p>
                 </div>
             </div>
