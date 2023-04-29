@@ -20,7 +20,7 @@ function Home({ setSelectedPage }: Props) {
     return (
         <section
             id="início"
-            className='gap-16 py-10 md:h-full md:pb-0'
+            className='gap-16 py-10 md:h-full md:pb-0 w-full'
         >
             {/* IMAGE AND MAIN HEADER */}
             <motion.div 
@@ -41,7 +41,7 @@ function Home({ setSelectedPage }: Props) {
                     className='md:-mt-20'>
                         <div className='relative'>
                             <div className='before:absolute before:-top-20 before:-left-20 before:z-[-1] md:before:content-evolvetext'>
-                                <img src={HomePageText} alt="home-page-text" className='w-[489px] h-[163px]'/>
+                                <img src={HomePageText} alt="home-page-text"/>
                             </div>
                         </div>
                         <p className='mt-8 text-md text-white'>
@@ -76,7 +76,7 @@ function Home({ setSelectedPage }: Props) {
                 </div>
 
                 {/* IMAGE */}
-                <div className='flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end'>
+                <div className='md:flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end'>
                     <img src={HomePageGraphic} alt="homepage-graphic" />
                 </div>
             </motion.div>

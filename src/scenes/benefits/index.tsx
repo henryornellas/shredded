@@ -66,7 +66,7 @@ function Benefits({ setSelectedPage }: Props) {
             whileInView="visible"
             viewport={{once: true, amount: 0.5}}
             variants={container}
-            className="mt-5 md: flex items-center justify-between gap-8">
+            className="mt-5 md:flex items-center justify-between gap-8">
                 {benefits.map((benefit) => (
                     <Benefit
                     key={benefit.title}
