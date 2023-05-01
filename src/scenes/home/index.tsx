@@ -59,7 +59,7 @@ function Home({ setSelectedPage }: Props) {
                         hidden: {opacity: 0, x:-50},
                         visible: {opacity:1, x:0,}
                     }}
-                    className='mt-8 flex items-center gap-8'>
+                    className='mt-8 mb-8 flex items-center gap-8'>
                         <ActionButton setSelectedPage={setSelectedPage}>
                             Junte-se agora
                         </ActionButton>
@@ -76,8 +76,8 @@ function Home({ setSelectedPage }: Props) {
                 </div>
 
                 {/* IMAGE */}
-                <div className='md:flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end'>
-                    <img src={HomePageGraphic} alt="homepage-graphic" />
+                <div className='md:flex basis-3/5 justify-center md:z-10 md:ml-40 md:mt-16 md:justify-items-end md:h-[90%]'>
+                    <img src={HomePageGraphic} alt="homepage-graphic" className=''/>
                 </div>
             </motion.div>
 
